@@ -1,0 +1,105 @@
+*,
+::before,
+::after { 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto auto auto auto;
+}
+header {
+    padding: 0.3rem 1rem;
+    background-color: #404040;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+nav {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+nav button {
+    margin-right: 1rem;
+    padding: 0 0.3rem;
+}
+main {
+    padding: 1rem;
+    background-color: #606060;
+    height: 84vh;
+}
+footer {
+    padding: .1rem 1rem;
+    font-size: small;
+    text-align: right;
+    height: 3vh;
+}
+
+button[name="btn-scroll"] {
+    padding: 0 1rem;
+}
+button {
+    cursor: pointer;
+}
+/*
+
+    CONFIG TABLE
+
+*/
+
+.table {
+    width: calc(100vw - 2rem);
+    height: 50vh;
+    background-color: white;
+    overflow: scroll;
+}
+table {
+    min-width: max-content;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+thead tr th:first-child {
+    color: #404040;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    font-size: small;
+    padding: 5px 10px;
+    background-color: #404040;
+    color: whitesmoke;
+}
+
+tbody tr {
+    height: 34.4px;
+}
+td {
+    font-size: x-small;
+    text-wrap: nowrap; 
+    padding: 0 10px;   
+}
+th, td {
+    border: .5px solid rgba(128, 128, 128, 0.3);
+}
+
+progress {
+    width: calc(100vw - 2rem);
+    margin: 0;
+    padding: 0;
+}
+
+tr td:first-child {
+    background-color: #404040;
+    color: whitesmoke;
+    text-align: center;
+    
+}
