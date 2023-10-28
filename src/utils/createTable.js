@@ -89,10 +89,11 @@ export class CreateTable {
             for ( let key = 0; key < fields.length; key ++ ) {
             
                 const field = fields [ key ];
-                // const value =  data [ i ][ field ]
+
                 const value = field === 'item' ? indexItem : data [ i ][ field ]; 
-                // const value =  field === 'item' ? data [i] = indexItem : data [ i ][ field ]
+
                 const td = value ? `<td>${value}</td>` : `<td></td>`;
+
                 tds += td;
 
             };
